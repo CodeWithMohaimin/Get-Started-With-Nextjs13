@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function page() {
@@ -5,7 +6,7 @@ export default function page() {
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
-          <div className="p-4 md:w-1/3">
+          <Link href="/blogs/one" className="p-4 md:w-1/3">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -71,7 +72,7 @@ export default function page() {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
           <div className="p-4 md:w-1/3">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
